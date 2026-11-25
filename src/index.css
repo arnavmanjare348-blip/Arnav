@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-kraft-linen: #f7f4ee;
+  --color-kraft-oatmeal: #efe9dd;
+  --color-kraft-elevated: #faf8f3;
+  --color-fiber-taupe: #d8cebc;
+  --color-botanical-forest: #1e3f20;
+  --color-botanical-moss: #2e5a27;
+  --color-sprout-green: #4e8a3c;
+  --color-warm-charcoal: #1f2421;
+  --color-muted-bark: #5c5850;
+  --color-placeholder-stone: #8c867a;
+}
+
+@layer base {
+  html {
+    background-color: #f7f4ee;
+    color: #1f2421;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #f7f4ee;
+    color: #1f2421;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", Georgia, serif;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: #c5edc1;
+    color: #07290c;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+.shadow-herbarium {
+  box-shadow: 0 8px 24px -4px rgba(30, 63, 32, 0.08);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

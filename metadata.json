@@ -1,0 +1,6 @@
+{
+  "name": "Sylva Herbarium",
+  "description": "Zero-waste botanical apothecary storefront featuring small-batch herbal infusions, cold-pressed elixirs, full ingredient traceability, and tactile packaging-inspired specifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
